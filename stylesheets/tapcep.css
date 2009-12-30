@@ -1,0 +1,86 @@
+ul li textarea.address {
+	height: 5em;
+	resize: none;
+	-webkit-user-select: auto;
+}
+
+#map_canvas {
+	width: 320px;
+	height: 416px;
+	background: #e5e3df url(../images/loader_big.gif) center center no-repeat;
+}
+
+.landscape #map_canvas {
+	width: 480px;
+	height: 274px;
+}
+
+.arrow img {
+	height: 18px;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+#cep {
+	float: right;
+	width: 50%;
+	font-size: 26px;
+	text-align: right;
+}
+
+#ceplabel {
+	float: left;
+	line-height: 32px;
+	width: 50%;
+}
+
+.loader {
+	text-align: center;
+	padding: 15px;
+}
+
+.fullscreen #add-to-home {
+	display: none;
+}
+
+a.subtle {
+	color: inherit;
+	text-decoration: none;
+}
+
+.indented {
+	margin: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+.cleared {
+	overflow: hidden;	
+}
+
+#about p {
+    color: #333;
+    font: bold 12px Helvetica;
+		line-height: 1.5em;
+    padding: 10px;
+    margin: 15px 10px 17px 10px;
+		text-align: center;
+		font-weight: normal;
+}
+
+#about p.rounded {
+    color: #666;
+    background: #fff;
+    border: 1px solid #B4B4B4;
+    -webkit-border-radius: 8px;
+}
+
+#about p.rounded strong {
+	font-size: 14px;
+}
+
+#about a.goback {
+	margin-top: 20px;
+}

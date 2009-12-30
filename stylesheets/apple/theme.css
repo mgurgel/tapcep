@@ -74,6 +74,17 @@ body.landscape .toolbar > h1 {
     -webkit-border-image: url(img/toolButton.png) 0 5 0 5;
 }
 
+/* 
+
+Fix for Back Button bug
+http://code.google.com/p/jqtouch/issues/detail?id=200
+
+.button.active, .back.active, .cancel.active, .add.active {
+    -webkit-border-image: url(img/toolButton.png) 0 5 0 5;	
+}
+
+*/ 
+
 .button.active, .cancel.active, .add.active {
     -webkit-border-image: url(img/toolButton.png) 0 5 0 5;	
 }
@@ -81,6 +92,8 @@ body.landscape .toolbar > h1 {
 .back.active {
   -webkit-border-image: url(img/backButton.png) 0 8 0 14;
 }
+
+/* End fix */
 
 .blueButton {
     -webkit-border-image: url(img/actionButton.png) 0 5 0 5;
@@ -326,6 +339,20 @@ ul li input[type="checkbox"]:after, ul li input[type="radio"]:after {
 /* @end */
 
 /* @group Edge to edge */
+ul.edgetoedge {
+    -webkit-border-radius: 0;
+}
+	
+ul.edgetoedge li.sep {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(139, 159, 171, 1)), to(rgba(181, 193, 201, 1.0)));
+    border-bottom: 1px solid #b5c1c9;
+    border-top: 1px solid #b5c1c9;
+    color: #fff;
+    font-size: 16px;
+    margin: 1px 0 0 0;
+    padding: 2px 10px;
+    text-shadow: #636a6f 0 1px 0;
+}
 
 .edgetoedge h4 {
     color: #fff;

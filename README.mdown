@@ -15,14 +15,12 @@ A functional demo is available at <http://tapush.com/tapcep>
 Installation
 ------------
 
-1.	Clone this repository
-2. 	Visit [República Virtual](http://www.republicavirtual.com.br/cep/) and 
-		download their SQL dump file 
-		(look for a link that says "Download da base de dados de CEP")
-3.	Unarchive and import the dump file into a MySQL database
-4.  Rename db_connect.sample.php to db_connect.php
-5.	Edit the settings in db_connect.php to match the database in _step 3_
-6. 	Upload the app to a webserver
+1. Clone this repository
+2. Visit [República Virtual](http://www.republicavirtual.com.br/cep/) and download their SQL dump file (look for a link that says "Download da base de dados de CEP")
+3. Unarchive and import the dump file into a MySQL database
+4. Rename db_connect.sample.php to db_connect.php
+5. Edit the settings in db_connect.php to match the database in _step 3_
+6. Upload the app to a webserver
 
 The app should do a local database query before falling back to the República
 Virtual webservice in order to take the load off their server.

@@ -1,4 +1,4 @@
-var current_address = null;
+var current_address, onlineStatusTimeout;
 
 function getAddress(c) {
 	showLoader();
@@ -83,7 +83,19 @@ function showMap() {
 	}
 }
 
-
+function checkOnlineStatus() {
+	var timeOut = 5000;
+	if (navigator.onLine) {
+		$("#main").show();
+		$("#offline").hide();
+	}
+	else {
+		$("#main").hide();
+		$("#offline").show();
+		timeOut = 1000;
+	}
+	onlineStatusTimeout = setTimeout(checkOnlineStatus, timeOut);	
+}
 
 /* 
 	Correção para movimentação do mapa

@@ -29,6 +29,6 @@ jQuery(function($){
 		}
 		showMap();
 	});
+	checkOnlineStatus();
 });
 
-	

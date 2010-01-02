@@ -29,9 +29,7 @@
 					<label for="cep" id="ceplabel">CEP:</label>
 					<input id="cep" type="tel" name="cep" class="selectable" />
 				</li>
-			</ul>
-			<ul id="offline" class="rounded">
-				<li>
+				<li id="offline">
 					Seu aparelho está offline.
 				</li>
 			</ul>

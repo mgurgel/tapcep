@@ -34,6 +34,10 @@ ul li textarea.address {
 	width: 50%;
 }
 
+#offline {
+	display: none;
+}
+
 .loader {
 	text-align: center;
 	padding: 15px;

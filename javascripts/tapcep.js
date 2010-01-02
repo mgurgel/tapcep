@@ -86,11 +86,12 @@ function showMap() {
 function checkOnlineStatus() {
 	var timeOut = 5000;
 	if (navigator.onLine) {
-		$("#main").show();
+		$("#ceprow").show();
 		$("#offline").hide();
 	}
 	else {
-		$("#main").hide();
+		$("#cep").blur();
+		$("#ceprow").hide();
 		$("#offline").show();
 		timeOut = 1000;
 	}

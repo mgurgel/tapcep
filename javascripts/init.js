@@ -1,8 +1,6 @@
 var jQT = new $.jQTouch({
 preloadImages: [
-    'stylesheets/apple/img/back_button.png',
-    'stylesheets/apple/img/back_button_clicked.png',
-    'stylesheets/apple/img/button_clicked.png',
+    'stylesheets/apple/img/backButton.png',
     'stylesheets/apple/img/grayButton.png',
     'stylesheets/apple/img/whiteButton.png',
     'stylesheets/apple/img/loading.gif',

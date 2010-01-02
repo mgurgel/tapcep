@@ -16,9 +16,10 @@ $ignore = array(
 								"ajax_cep.php"
 								);
 $network = array(
-									"./ajax_cep.php",
-									"http://maps.google.com/"
+									"*"
 								);
+								
+$hashes .= serialize($network);
 
 header('Content-Type: text/cache-manifest');
 echo "CACHE MANIFEST\n";
@@ -30,7 +31,7 @@ foreach(new RecursiveIteratorIterator($dir) as $file) {
         substr($file, 0, 9) != "./archive" &&
         strpos($file, "/.svn") === false  &&
         strpos($file, "/.git") === false &&
-        array_search($file->getFilename(), $ignore) == false) {
+        array_search($file->getFilename(), $ignore) === false) {
                 echo $file . "\n";
                 $hashes .= md5_file($file);
         }
